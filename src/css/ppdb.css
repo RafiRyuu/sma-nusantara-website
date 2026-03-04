@@ -1,0 +1,367 @@
+/* ===========================================
+   ppdb.css — PPDB Page Styles
+   SMA Nusantara Cendekia
+   =========================================== */
+
+/* ========== PPDB HERO / BANNER ========== */
+.ppdb-hero {
+   padding: var(--spacing-16) 0;
+   background: linear-gradient(135deg, var(--color-primary) 0%, #2a3d66 100%);
+   color: var(--color-secondary);
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.ppdb-hero::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover;
+   opacity: 0.15;
+   z-index: 0;
+}
+
+.ppdb-hero .container {
+   position: relative;
+   z-index: 1;
+}
+
+.ppdb-hero .promo-badge {
+   display: inline-block;
+   background-color: var(--color-accent);
+   color: var(--color-primary);
+   padding: var(--spacing-1) var(--spacing-4);
+   border-radius: var(--radius-full);
+   font-weight: var(--weight-bold);
+   font-size: var(--text-small);
+   text-transform: uppercase;
+   margin-bottom: var(--spacing-4);
+   box-shadow: 0 4px 10px rgba(244, 166, 35, 0.3);
+}
+
+.ppdb-hero h1 {
+   font-family: var(--font-heading);
+   font-size: var(--text-h1);
+   margin-bottom: var(--spacing-4);
+   line-height: 1.1;
+}
+
+.ppdb-hero p {
+   font-size: 1.25rem;
+   max-width: 700px;
+   margin: 0 auto var(--spacing-8);
+   opacity: 0.9;
+}
+
+.ppdb-cta-group {
+   display: flex;
+   justify-content: center;
+   gap: var(--spacing-4);
+}
+
+.ppdb-hero .btn-primary {
+   padding: var(--spacing-4) var(--spacing-10);
+   font-size: 1.125rem;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== STICKY CTA MOBILE ========== */
+.sticky-cta-mobile {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--color-secondary);
+   padding: var(--spacing-3) var(--spacing-4);
+   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+   display: none;
+   z-index: 999;
+}
+
+@media (max-width: 768px) {
+   .ppdb-hero h1 {
+      font-size: 2.5rem;
+   }
+
+   .ppdb-cta-group {
+      flex-direction: column;
+   }
+
+   .sticky-cta-mobile {
+      display: block;
+   }
+
+   .ppdb-hero {
+      padding-bottom: var(--spacing-16);
+   }
+}
+
+/* ========== TIMELINE (ALUR) ========== */
+.timeline {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   padding-top: var(--spacing-8);
+}
+
+.timeline::before {
+   content: '';
+   position: absolute;
+   top: calc(var(--spacing-8) + 30px);
+   left: 5%;
+   width: 90%;
+   height: 3px;
+   background-color: var(--color-accent);
+   opacity: 0.3;
+   z-index: 0;
+}
+
+.timeline-item {
+   flex: 1;
+   text-align: center;
+   position: relative;
+   z-index: 1;
+}
+
+.timeline-icon {
+   width: 60px;
+   height: 60px;
+   background-color: var(--color-primary);
+   color: var(--color-secondary);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto var(--spacing-4);
+   border: 4px solid var(--color-secondary);
+   box-shadow: var(--shadow-sm);
+   transition: all var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-icon {
+   background-color: var(--color-accent);
+   transform: scale(1.1);
+}
+
+.timeline-content h3 {
+   font-size: 1.125rem;
+   margin-bottom: var(--spacing-2);
+}
+
+.timeline-content p {
+   font-size: 0.875rem;
+   color: var(--color-text-light);
+   padding: 0 var(--spacing-2);
+}
+
+/* ========== FEE TABLE ========== */
+.table-responsive {
+   overflow-x: auto;
+   margin-top: var(--spacing-10);
+   border-radius: var(--radius-lg);
+   box-shadow: var(--shadow-lg);
+}
+
+.fee-table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: var(--color-secondary);
+   min-width: 600px;
+}
+
+.fee-table th,
+.fee-table td {
+   padding: var(--spacing-4) var(--spacing-6);
+   text-align: left;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.fee-table th {
+   background-color: var(--color-primary);
+   color: var(--color-secondary);
+   font-weight: var(--weight-bold);
+   text-transform: uppercase;
+   font-size: 0.875rem;
+   letter-spacing: 1px;
+}
+
+.fee-table tbody tr:hover {
+   background-color: rgba(0, 0, 0, 0.02);
+}
+
+.fee-table .discount {
+   text-decoration: line-through;
+   color: #ff4d4d;
+   font-size: 0.8em;
+   margin-right: var(--spacing-2);
+}
+
+.fee-table tfoot tr {
+   background-color: rgba(244, 255, 244, 0.5);
+   font-size: 1.1rem;
+}
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+@media (max-width: 992px) {
+   .timeline {
+      flex-direction: column;
+      gap: var(--spacing-8);
+      padding-top: 0;
+   }
+
+   .timeline::before {
+      left: 30px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+   }
+
+   .timeline-item {
+      display: flex;
+      gap: var(--spacing-6);
+      text-align: left;
+   }
+
+   .timeline-icon {
+      margin: 0;
+      flex-shrink: 0;
+   }
+}
+
+/* ========== TESTIMONIAL SLIDER ========== */
+.testimonial-slider {
+   position: relative;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.testimonial-track {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+   min-width: 100%;
+   padding: var(--spacing-4);
+}
+
+.testimonial-card {
+   background-color: var(--color-secondary);
+   padding: var(--spacing-10);
+   text-align: center;
+   box-shadow: var(--shadow-md);
+}
+
+.testimonial-card p {
+   font-size: 1.25rem;
+   font-style: italic;
+   color: var(--color-text);
+   margin-bottom: var(--spacing-6);
+   line-height: 1.6;
+}
+
+.quote-icon {
+   color: var(--color-accent);
+   margin-bottom: var(--spacing-4);
+}
+
+.alumni-info {
+   border-top: 1px solid rgba(0, 0, 0, 0.05);
+   padding-top: var(--spacing-4);
+}
+
+.alumni-name {
+   font-weight: var(--weight-bold);
+   color: var(--color-primary);
+}
+
+.alumni-batch {
+   font-size: 0.875rem;
+   color: var(--color-text-light);
+}
+
+.slider-controls {
+   display: flex;
+   justify-content: center;
+   gap: var(--spacing-3);
+   margin-top: var(--spacing-6);
+}
+
+.slider-dot {
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: #ddd;
+   border: none;
+   cursor: pointer;
+   transition: background-color var(--transition-fast);
+}
+
+.slider-dot.active {
+   background-color: var(--color-accent);
+}
+
+/* ========== FAQ ACCORDION ========== */
+.faq-accordion {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.faq-item {
+   margin-bottom: var(--spacing-3);
+   border: 1px solid rgba(0, 0, 0, 0.05);
+   border-radius: var(--radius-md);
+   overflow: hidden;
+   background-color: var(--color-secondary);
+}
+
+.faq-question {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: var(--spacing-4) var(--spacing-6);
+   background: none;
+   border: none;
+   cursor: pointer;
+   text-align: left;
+   font-weight: var(--weight-semibold);
+   font-size: 1.125rem;
+   color: var(--color-primary);
+   transition: background-color var(--transition-fast);
+}
+
+.faq-question:hover {
+   background-color: rgba(0, 0, 0, 0.02);
+}
+
+.faq-question i {
+   transition: transform var(--transition-normal);
+}
+
+.faq-item.active .faq-question i {
+   transform: rotate(180deg);
+}
+
+.faq-answer {
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.3s ease-out;
+   background-color: #fcfcfc;
+}
+
+.faq-item.active .faq-answer {
+   max-height: 300px;
+   padding: var(--spacing-4) var(--spacing-6) var(--spacing-6);
+}
+
+.faq-answer p {
+   color: var(--color-text-light);
+   line-height: 1.6;
+}
+
+/* PPDB page styles akan diisi di W3 */

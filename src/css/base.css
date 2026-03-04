@@ -1,0 +1,125 @@
+/* ===========================================
+   base.css — CSS Reset & Base Styles
+   SMA Nusantara Cendekia
+   =========================================== */
+
+/* 1. Box Sizing Reset */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* 2. Margin & Padding Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+   margin: 0;
+   padding: 0;
+}
+
+/* 3. Smooth Scrolling */
+html {
+   scroll-behavior: smooth;
+   font-size: 100%;
+   /* Base 16px */
+}
+
+/* 4. Body Defaults */
+body {
+   font-family: var(--font-body);
+   font-size: var(--text-body);
+   font-weight: var(--weight-regular);
+   color: var(--color-text);
+   background-color: var(--color-background);
+   line-height: 1.65;
+   min-height: 100vh;
+   text-rendering: optimizeSpeed;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   letter-spacing: -0.01em;
+}
+
+/* 5. Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--font-heading);
+   line-height: 1.2;
+   color: var(--color-primary);
+   margin-bottom: var(--spacing-4);
+}
+
+h1 {
+   font-size: var(--text-h1);
+   font-weight: var(--weight-bold);
+}
+
+h2 {
+   font-size: var(--text-h2);
+   font-weight: var(--weight-semibold);
+}
+
+h3 {
+   font-size: var(--text-h3);
+   font-weight: var(--weight-semibold);
+}
+
+/* 6. Typography Elements */
+p {
+   margin-bottom: var(--spacing-4);
+   color: var(--color-text-light);
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   transition: color var(--transition-fast);
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+/* 7. Media Defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* 8. Form Elements */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+
+/* 9. Global Utilities */
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 var(--spacing-4);
+}

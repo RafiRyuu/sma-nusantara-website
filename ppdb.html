@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Informasi pendaftaran siswa baru (PPDB) SMA Nusantara Cendekia tahun ajaran 2026/2027. Jadwal, persyaratan, dan alur pendaftaran lengkap.">
+    <meta property="og:title" content="PPDB 2026 — SMA Nusantara Cendekia" />
+    <meta property="og:description"
+        content="Informasi pendaftaran siswa baru (PPDB) SMA Nusantara Cendekia tahun ajaran 2026/2027." />
+    <meta property="og:type" content="website" />
+    <title>Penerimaan Siswa Baru (PPDB) 2026 — SMA Nusantara Cendekia</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/src/css/variables.css" />
+    <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="/src/css/ppdb.css" />
+</head>
+
+<body>
+
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header id="navbar">
+        <nav class="navbar-container">
+            <a href="/" class="navbar-logo">🏫 SMA Nusantara Cendekia</a>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="ppdb.html" class="nav-link active">PPDB</a></li>
+                <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- Banner Promosi (W3F1) -->
+        <section id="ppdb-banner" class="ppdb-hero">
+            <div class="container reveal">
+                <span class="promo-badge">Gelombang 1 Telah Dibuka</span>
+                <h1>Raih Masa Depan Gemilang Bersama Kami</h1>
+                <p>Bergabunglah dengan komunitas pembelajar yang dinamis dan berprestasi di SMA Nusantara Cendekia.
+                    Dapatkan beasiswa hingga 50% bagi pendaftar Gelombang 1.</p>
+                <div class="ppdb-cta-group">
+                    <a href="#" class="btn btn-primary">DAFTAR SEKARANG <i data-lucide="user-plus"></i></a>
+                    <a href="#biaya" class="btn btn-secondary">Lihat Rincian Biaya</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alur Pendaftaran (W3F2) -->
+        <section id="alur-pendaftaran" class="section bg-light">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="subtitle">Tahapan</span>
+                    <h2>Alur Pendaftaran</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon"><i data-lucide="user-plus"></i></div>
+                        <div class="timeline-content">
+                            <h3>Pendaftaran Online</h3>
+                            <p>Mengisi formulir melalui website resmi atau datang langsung ke sekolah.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon"><i data-lucide="file-text"></i></div>
+                        <div class="timeline-content">
+                            <h3>Verifikasi Berkas</h3>
+                            <p>Penyerahan dokumen kelengkapan administrasi dan verifikasi data calon siswa.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon"><i data-lucide="clipboard-check"></i></div>
+                        <div class="timeline-content">
+                            <h3>Tes Seleksi</h3>
+                            <p>Meliputi Tes Potensi Akademik, Psikotes, dan Wawancara (Siswa & Orang Tua).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon"><i data-lucide="mail-check"></i></div>
+                        <div class="timeline-content">
+                            <h3>Pengumuman</h3>
+                            <p>Hasil seleksi diumumkan melalui website dan email calon siswa.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon"><i data-lucide="credit-card"></i></div>
+                        <div class="timeline-content">
+                            <h3>Daftar Ulang</h3>
+                            <p>Penyelesaian administrasi biaya pendidikan dan pengambilan seragam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabel Biaya (W3F2) -->
+        <section id="biaya" class="section">
+            <div class="container reveal">
+                <div class="section-heading">
+                    <span class="subtitle">Investasi Masa Depan</span>
+                    <h2>Rincian Biaya Pendidikan</h2>
+                </div>
+                <div class="table-responsive">
+                    <table class="fee-table">
+                        <thead>
+                            <tr>
+                                <th>Komponen Biaya</th>
+                                <th>Gelombang 1 (Promo)</th>
+                                <th>Gelombang 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Biaya Pendaftaran</td>
+                                <td>Rp 250.000</td>
+                                <td>Rp 500.000</td>
+                            </tr>
+                            <tr>
+                                <td>Uang Pangkal (Gedung)</td>
+                                <td><span class="discount">Rp 7.500.000</span> Rp 5.000.000</td>
+                                <td>Rp 7.500.000</td>
+                            </tr>
+                            <tr>
+                                <td>SPP per Bulan</td>
+                                <td>Rp 750.000</td>
+                                <td>Rp 750.000</td>
+                            </tr>
+                            <tr>
+                                <td>Biaya Seragam (5 Set)</td>
+                                <td>Rp 1.250.000</td>
+                                <td>Rp 1.250.000</td>
+                            </tr>
+                            <tr>
+                                <td>Kegiatan Tahunan</td>
+                                <td>Rp 2.000.000</td>
+                                <td>Rp 2.000.000</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total Awal</td>
+                                <td><strong>Rp 9.250.000</strong></td>
+                                <td><strong>Rp 12.000.000</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <p style="margin-top: 2rem; text-align: center; color: var(--color-text-light); font-size: 0.9rem;">*
+                    Biaya di atas sewaktu-waktu dapat berubah sesuai kebijakan sekolah.</p>
+            </div>
+        </section>
+
+        <!-- Testimoni (W3F3) -->
+        <section id="testimoni" class="section bg-light overflow-hidden">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="subtitle">Apa Kata Mereka</span>
+                    <h2>Testimoni Alumni</h2>
+                </div>
+                <div class="testimonial-slider reveal">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                <p>"SMA Nusantara Cendekia tidak hanya memberikan ilmu akademik, tapi juga membentuk
+                                    karakter saya menjadi pribadi yang disiplin dan inovatif."</p>
+                                <div class="alumni-info">
+                                    <div class="alumni-name">Andika Pratama</div>
+                                    <div class="alumni-batch">Batch 2022 — Teknik Informatika ITB</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                <p>"Fasilitas laboratorium dan dukungan guru-gurunya sangat membantu saya memenangkan
+                                    lomba karya ilmiah tingkat nasional."</p>
+                                <div class="alumni-info">
+                                    <div class="alumni-name">Siti Fatimah</div>
+                                    <div class="alumni-batch">Batch 2021 — Kedokteran UI</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="quote-icon"><i data-lucide="quote"></i></div>
+                                <p>"Pengalaman berorganisasi di OSIS sangat melatih leadership saya. Sekolah ini
+                                    benar-benar memfasilitasi minat bakat siswa."</p>
+                                <div class="alumni-info">
+                                    <div class="alumni-name">Rendi Jaya</div>
+                                    <div class="alumni-batch">Batch 2023 — Business MGMT UGM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-dot active" aria-label="Go to slide 1"></button>
+                        <button class="slider-dot" aria-label="Go to slide 2"></button>
+                        <button class="slider-dot" aria-label="Go to slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ (W3F3) -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="subtitle">Pusat Bantuan</span>
+                    <h2>Pertanyaan Umum</h2>
+                </div>
+                <div class="faq-accordion reveal">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Kapan Gelombang 1 ditutup?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Gelombang 1 pendaftaran ditutup pada tanggal 31 Maret 2026. Segera daftar untuk
+                                mendapatkan promo beasiswa gedung sebesar 30%.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Apa saja dokumen yang harus disiapkan?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Fotokopi Akte Kelahiran, Kartu Keluarga, Rapor SMP (Semester 1-5), Pas Foto 3x4, dan
+                                Surat Keterangan Sehat.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Apakah ada program beasiswa prestasi?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ya, kami menyediakan beasiswa penuh dan parsial bagi siswa dengan prestasi akademik
+                                maupun non-akademik di tingkat kabupaten/provinsi/nasional.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Apakah tersedia asrama bagi siswa luar kota?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Saat ini kami belum memiliki asrama, namun kami bekerja sama dengan pengelola kost
+                                syariah yang terverifikasi di sekitar sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Col 1: About -->
+            <div class="footer-col reveal">
+                <h4>SMA Nusantara Cendekia</h4>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: var(--spacing-4);">Membangun generasi cerdas,
+                    berkarakter, dan siap menghadapi tantangan masa depan dengan landasan iman dan teknologi.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Links -->
+            <div class="footer-col reveal">
+                <h4>Tautan Cepat</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="ppdb.html">Penerimaan Siswa Baru</a></li>
+                    <li><a href="galeri.html">Galeri Sekolah</a></li>
+                    <li><a href="index.html#about">Tentang Kami</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact -->
+            <div class="footer-col reveal">
+                <h4>Kontak Kami</h4>
+                <ul class="footer-links">
+                    <li style="display: flex; gap: 10px; color: rgba(255,255,255,0.7);"><i data-lucide="map-pin"
+                            style="color: var(--color-accent);"></i> Jl. Budi Utomo No.1, Jakarta Pusat</li>
+                    <li style="display: flex; gap: 10px; color: rgba(255,255,255,0.7);"><i data-lucide="phone"
+                            style="color: var(--color-accent);"></i> (021) 345-6789</li>
+                    <li style="display: flex; gap: 10px; color: rgba(255,255,255,0.7);"><i data-lucide="mail"
+                            style="color: var(--color-accent);"></i> info@smanusantara.sch.id</li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Map -->
+            <div class="footer-col reveal">
+                <h4>Lokasi</h4>
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d15867.0673418104!2d106.8373325!3d-6.1619897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c4048ca04d%3A0xe5a228373eabe96c!2sSMK%20Negeri%201%20Jakarta!5e0!3m2!1sid!2sid!4v1709562500000!5m2!1sid!2sid"
+                        width="100%" height="150" style="border:0; border-radius: var(--radius-md);" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SMA Nusantara Cendekia. Membangun Negeri dengan Ilmu.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA (W3F1) -->
+    <div class="sticky-cta-mobile">
+        <a href="#" class="btn btn-primary" style="width: 100%;">DAFTAR PPDB SEKARANG <i data-lucide="send"></i></a>
+    </div>
+
+    <!-- Floating WhatsApp Button (W3F4) -->
+    <a href="https://wa.me/628123456789" class="whatsapp-fab" target="_blank" aria-label="Chat WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/js/carousel.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

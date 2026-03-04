@@ -1,0 +1,87 @@
+/* ===========================================
+   variables.css — Design Tokens
+   SMA Nusantara Cendekia
+   =========================================== */
+
+:root {
+   /* Colors */
+   --color-primary: #1B2A4A;
+   /* Biru Navy */
+   --color-secondary: #FFFFFF;
+   /* Putih */
+   --color-accent: #F4A623;
+   /* Gold */
+   --color-background: #F5F7FA;
+   /* Light Gray */
+   --color-text: #1A1A2E;
+   /* Dark */
+   --color-text-light: #5A5A6E;
+   /* Lighter Text */
+   --color-success: #2E7D32;
+   /* Green */
+   --color-danger: #E65100;
+   /* Orange Red */
+
+   /* Typography Families */
+   --font-heading: 'Poppins', sans-serif;
+   --font-body: 'Inter', sans-serif;
+
+   /* Typography Sizes (Base: 16px) */
+   --text-h1: 3rem;
+   /* 48px */
+   --text-h2: 2.25rem;
+   /* 36px */
+   --text-h3: 1.5rem;
+   /* 24px */
+   --text-body: 1rem;
+   /* 16px */
+   --text-small: 0.875rem;
+   /* 14px */
+   --text-button: 1rem;
+   /* 16px */
+
+   /* Font Weights */
+   --weight-regular: 400;
+   --weight-semibold: 600;
+   --weight-bold: 700;
+
+   /* Spacing (Modular Scale) */
+   --spacing-1: 0.25rem;
+   /* 4px  */
+   --spacing-2: 0.5rem;
+   /* 8px  */
+   --spacing-3: 0.75rem;
+   /* 12px */
+   --spacing-4: 1rem;
+   /* 16px */
+   --spacing-5: 1.5rem;
+   /* 24px */
+   --spacing-6: 2rem;
+   /* 32px */
+   --spacing-8: 3rem;
+   /* 48px */
+   --spacing-10: 4rem;
+   /* 64px */
+   --spacing-12: 5rem;
+   /* 80px */
+   --spacing-16: 8rem;
+   /* 128px*/
+
+   /* Box Shadows */
+   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+   /* Border Radius */
+   --radius-sm: 0.25rem;
+   /* 4px */
+   --radius-md: 0.5rem;
+   /* 8px */
+   --radius-lg: 1rem;
+   /* 16px */
+   --radius-full: 9999px;
+
+   /* Transitions */
+   --transition-fast: 150ms ease-in-out;
+   --transition-normal: 300ms ease-in-out;
+}

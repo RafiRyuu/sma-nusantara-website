@@ -1,0 +1,15 @@
+{
+  "name": "website-sekolah-antigravity",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Website Sekolah SMA Nusantara Cendekia — Profil, PPDB, Galeri Kreatif",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
